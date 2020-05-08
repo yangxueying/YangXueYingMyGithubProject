@@ -1,0 +1,956 @@
+
+body{
+  min-width: 1440px;
+}
+::placeholder{
+  color: #aaa;
+}
+::-webkit-input-placeholder { /* WebKit browsers */  
+    color: #aaa;  
+}  
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+    color: #aaa;  
+}  
+::-moz-placeholder { /* Mozilla Firefox 19+ */  
+    color: #aaa;opacity:1  
+}  
+:-ms-input-placeholder { /* Internet Explorer 10+ */  
+    color: #aaa !important;  
+}  
+select{
+  background: none;
+  font-size: 15px;
+}
+select:hover{
+  cursor: pointer;
+}
+input{
+  background: none;
+}
+header{
+  padding: 1.5% 6% 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  min-width: 1400px;
+}
+header img{
+  display: block;
+  float: left;
+}
+.swiper-container-top{
+  /*height: 800px;*/
+}
+.swiper-container-top img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.cform{
+  position: relative;
+}
+.coverform{
+  position: absolute;
+  bottom: 130px;
+  z-index: 10000;
+  width: 100%;
+  height: 260px;
+}
+#phone{
+  width: 80%;
+}
+.formtop{
+  width: 950px;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 60px;
+  border-radius: 5px; 
+}
+.formtop div{
+  display: inline-block;
+  width: 24%;
+  padding-left: 20px; 
+  margin-top: 18px;
+  border-right: 1px solid #ccc; 
+}
+.formtop .formicon{
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+#province,#city{
+  width: 33%;
+}
+.phoneshow{
+  margin-right: 10px;
+}
+.formtop .form-city{
+  width: 50%;
+}
+.formtop .form-city select{
+  margin-left: 10px;
+}
+.form-pettype select,.form-sex select{
+  margin-right: 20px;
+}
+.formtop .form-sex{
+  border-right: 0; 
+}
+.formbottom{
+  width: 950px;
+  margin: 15px auto 0;
+  position: relative;
+}
+.formbottom .form-time{
+  background: rgba(255,255,255,0.8);
+  width: 670px;
+  height: 60px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: 16px;
+  padding: 20px 20px 0 50px;
+}
+.formbottom .form-phone{
+  background: rgba(255,255,255,0.8);
+  width: 670px;
+  height: 60px;
+  display: inline-block;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: 16px;
+  padding: 20px 20px 0 50px;
+}
+.formbottom input{
+  font-size: 16px;
+}
+.formtop #petname{
+  font-size: 16px;
+  width: 65%;
+}
+.btn-submit{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 270px;
+  height: 60px;
+  color: #333;
+  background-color: #fbc02d;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border:0;
+  font-size: 35px;
+  font: 460 35px -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+}
+.btn-submit:hover{
+  cursor: pointer;
+}
+aside{
+  background: url(http://viptail.image.alimmdn.com/files/official_web/img/home_download.png) center center no-repeat;
+  background-size: 100%;
+  z-index: 1000;
+  width: 1400px;
+  text-align: center;
+  color: #f1f1f1;
+  height: 230px;
+  padding-left: 30%;
+  margin: -180px auto 0;
+  position: relative;
+}
+aside h1{
+  font-size: 25px;
+  width: 100%;
+  display: inline-block;
+  margin: 80px 0 10px;
+}
+aside h2{
+  font-size: 15px;
+  width: 100%;
+  display: inline-block;
+}
+aside span{
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 100px;
+  height: 50px;
+  background: #000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.family{
+  padding: 80px 0;
+  position: relative;
+}
+.family h1{
+  text-align: center;
+  font-size: 33px;
+  width: 1200px;
+  margin: 0 auto;
+  font-weight: 800;
+  color: #555;
+}
+.family h2{
+  text-align: center;
+  font-size: 20px;
+  margin: 10px auto 50px;
+  color: #a0a0a0;
+  width: 1200px;
+}
+.swiper-container-banner{
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+}
+.swiper-container-banner .swiper-slide{
+  border: 1px solid #f1f1f1;
+}
+.swiper-container-banner .swiper-slide .family-image{
+  width: 100%;
+  height: 225px; 
+}
+.swiper-container-banner .swiper-slide .family-uimg{
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;  
+  margin: 20px 15px;
+  vertical-align: top;
+}
+.fmilyright{
+  display: inline-block;
+  width: 278px;
+}
+.fmilyright .family-icon{
+  margin-top: 20px;
+  vertical-align: top;
+}
+.fmilyright .fname{
+  display: inline-block;
+  margin: 20px 5px 0;
+  font-size: 18px;
+}
+.fmilyright .location-icon{
+  width: 18px;
+  margin-top: 8px;
+  vertical-align: top; 
+}
+.fmilyright .cityname{
+  margin-top: 7px;
+  display: inline-block;
+}
+.fmilyright strong{
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+.fmilyright strong span{
+  color: #fbc02d;
+  font-size:35px;
+}
+.banner-button-left{
+  position: absolute;
+  left: 100px;
+  top: 400px;
+}
+.banner-button-left:hover{
+  cursor: pointer;
+}
+.banner-button-right{
+  position: absolute;
+  right: 80px;
+  top: 400px;
+}
+.banner-button-right:hover{
+  cursor: pointer;
+}
+.ensure{
+  width: 100%;
+  height: 400px;
+  background: url(http://viptail.image.alimmdn.com/files/official_web/img/home_central.jpg) center center no-repeat;
+  background-size: 100%;
+  color: #f1f1f1;
+  padding: 30px 200px;
+}
+.ensure div{
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.ensure h1{
+  font-size: 33px;
+  text-align: center;
+}
+.ensure div img{
+  width: 25%;
+  margin: 80px 0 30px;
+}
+.ensure div h2{
+  text-align: center;
+  font-size: 20px;
+}
+.ensure div h3{
+  text-align: center;
+  font-size: 15px;
+  color: #bbb;
+}
+.daily{
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+}
+.daily .swiper-container-daily{
+  overflow: hidden;
+  margin: 60px auto 0;
+  width: 1200px;
+}
+.daily h1{
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 800;
+  color: #555;
+}
+.daily .swiper-container-daily .daily-left{
+  width: 670px;
+  height: 470px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.daily .swiper-container-daily .daily-title{
+  position: absolute;
+  left: 0;
+  width: 130px;
+  height: 40px;
+  display: inline-block;
+  background: #fbc02d;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+  top: 60px;
+}
+.daily .swiper-container-daily .daily-right{
+  width: 620px;
+  height: 530px;
+  float: right;
+  border: 1px solid #ccc;
+  padding: 35px 80px 43px 130px;
+}
+.daily .swiper-container-daily .daily-right h1{
+  text-align: left;
+  margin-bottom: 40px;
+}
+.daily .swiper-container-daily .daily-right .daily-family-img{
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+}
+.daily .swiper-container-daily .daily-right .daily-family-name{
+  font-size: 20px;
+  font-weight: normal;
+  margin: 10px 0 0 15px;
+  display: inline-block;
+}
+.daily .swiper-container-daily .daily-right h2{
+  font-size: 18px;
+  color: #fbc02d;
+  margin: 15px 0 18px 3px;
+}
+.daily .swiper-container-daily .daily-right .daily-family-content{
+  line-height: 2;
+  height: 250px;
+  width: 365px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #b5b5b5;
+}
+.comefamily{
+  background: #fbc02d;
+  margin: 30px 0;
+  text-align: center;
+}
+.comefamily img{
+  vertical-align: middle;
+  width: 50%;
+  margin: 10px 0;
+}
+.swiper-pagination-bullet{
+  margin: 0!important;
+  width: 80px;
+  height: 5px;
+  border-radius: 0; 
+  background: #aaa;
+}
+.swiper-pagination-bullet-active{
+  background: #fbc02d;
+}
+.community h1{
+  text-align: center;
+  margin: 100px 0 50px 0;
+  font-size: 43px;
+  font-weight: 800;
+  color: #555;
+}
+.community .community-all{
+  width: 1200px;
+  margin: 0 auto 100px;
+  padding: 20px;
+  background: #f1f1f1;
+  position: relative;
+}
+.community .community-all .community-top{
+  background: #fff;
+}
+.community .community-all .community-top .community-left{
+  width: 520px;
+  height: 380px;
+  vertical-align: top;
+}
+
+.community .community-all .community-top span{
+  display: inline-block;
+  width: 580px;
+  height: 380px;
+  float: right;
+  padding-right: 100px;
+  font-size: 20px;
+  color: #282828;
+  line-height: 2;
+  overflow:hidden;
+}
+.community .community-all .community-top h2{
+  font-size: 30px;
+  width: 520px;
+  height: 30px;
+  margin: 30px 0;
+  line-height: 1;
+}
+.swiper-container-community{
+  width: 1022px;
+  height: 182px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.community-btn-left{
+  position: absolute;
+  left: 30px;
+  bottom: 100px;
+}
+.community-btn-right{
+  position: absolute;
+  right: 30px;
+  bottom: 100px;
+}
+.cover{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11111;
+  display: none;
+}
+.cover div{
+  background: #fff;
+  width: 560px;
+  height: 410px;
+  margin: 200px auto 0;
+  text-align: center;
+  position: relative;
+}
+.cover div h1,.cover div h2,.cover div h3,.cover div h5{
+  text-align: center;
+}
+.cover div .btn-close{
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.cover div .success{
+  margin: 35px 0 5px;
+}
+.cover div h1{
+  font-size: 20px;
+  font-weight: 700;
+}
+.cover div h2{
+  font-size: 18px;
+}
+.cover div .download{
+  width: 100px;
+  height: 100px;
+  margin: 10px 0; 
+}
+.cover div h3{
+  font-size: 16px;
+}
+.cover div h5{
+  font-size: 16px;
+}
+.cover div h5 strong{
+  color: red;
+  font-size: 20px;
+}
+@media (max-width: 1600px){
+  .banner-button-left{
+    left: 3.5%;
+  }
+  .banner-button-right{
+    left: 95%;
+  }
+}
+@media (max-width: 1500px) {
+  .banner-button-right{
+    left: 95%;
+  }
+}
+@media (max-width: 1440px){
+  header{
+    padding: 22px 85px 0;
+  }
+  aside{
+    padding-left: 500px;
+  }
+  .formtop,.formbottom{
+    margin-left:230px;
+    margin-right:230px;
+  }
+  .banner-button-left{
+    left: 50px;
+  }
+  .banner-button-right{
+    left: 1340px;
+  }
+}
+
+@media (max-width: 414px){
+      body,header{
+        min-width: 0;
+      }
+      header .logo{
+        width: 30%;
+      }
+      .top-right{
+        display: none;
+      }
+      .swiper-container-top{
+        display: none;
+      }
+      .swiper-container-phone-top{
+        display: block;
+      }
+      .swiper-container-phone-top img{
+        width: 100%;
+        display: block;
+      }
+      .coverform{
+        top: -80px;
+        height:auto;
+        margin: 3%;
+        width: 94%;
+        box-shadow: 0 0 20px 1px #dedede;
+      }
+      .formtop,.formbottom{
+        margin: 0;
+        width: 100%;
+        height: auto;
+      }
+      .formtop{
+        padding: 5% 2% 0 6%;
+      }
+      .formbottom{
+        padding: 0 2% 10% 6%;
+        background: #fff;
+      }
+      .formtop div{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 46%;
+      }
+      .formtop .formicon{
+        display: none;
+      }
+      .formtop .form-city{
+        width: 100%;
+      }
+      .form-city-p,.form-pettype-p,.form-sex-p{
+        display: block;
+        margin-bottom: 1%;
+      }
+      .form-pettype-p,.form-sex-p{
+        margin-top: 8%;
+      }
+      select{
+        border: 1px solid #ccc;
+        padding: 2%;
+        border-radius: 0;
+      }
+      .formtop .form-city select{
+        margin: 0;
+        margin-right: 2%;
+      }
+      #province, #city{
+        width: 46%;
+      }
+      .btn-submit{
+        top: 90%;
+        right: 20%;
+        width: 60%;
+        border-radius: 30px;
+        height:auto;
+        font-size: 20px;
+        padding: 2.5%;
+      }
+      .form-pettype select, .form-sex select{
+        margin: 0;
+        width: 100%;
+        padding: 5%;
+        margin-bottom: 1px;
+      }
+      .formtop .form-pettype,.formtop .form-sex{
+        position: relative;
+        margin-right: 2%;
+      }
+      .form-pettype .phoneshow,.form-sex .phoneshow{
+        margin: 0;
+        right: 5%;
+        bottom: 20%;
+      }
+      .formbottom .form-time{
+        width:100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+      .formbottom .form-phone{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+      .pc{
+        display: block;
+        margin: 3.5% 0 1%;
+      }
+      .phoneshow{
+        position: absolute;
+        margin: 3.5% 0 0 -8%;
+        width: 13px;
+      }
+      .ip6{
+        margin-left: -9%;
+      }
+      .form-city .icon-left{
+        margin-left: -9%;
+        width: 13px;
+      }
+      .formbottom input{
+        width: 46%;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        padding: 2% 3%;
+        margin-right: 2%;
+      }
+      .showphone{
+        display: none;
+      }
+      #phone{
+        width: 95%;
+      }
+      .bj-gary{
+        width: 100%;
+        height: 25em;
+        background: #f1f1f1;
+      }
+      aside{
+        display: none;
+      }
+      .family{
+        padding: 0;
+        margin: 0;
+      }
+      .family h1{
+        width: 100%;
+        font-size: 20px;
+        margin:6% 0 0;
+      }
+      .family h2{
+        width: 100%;
+        font-size: 14px;
+        padding: 0 5%;
+      }
+      .swiper-container-banner{
+        display: none;
+      }
+      .swiper-container-banner-p{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .swiper-container-banner-p .swiper-slide{
+        border: 1px solid #eee;
+      }
+      .family-image{
+        width: 100%;
+        display: block;
+      }
+      .family-uimg{
+        width: 18%;
+        margin: 5% 3%;
+        vertical-align: top;
+        border-radius: 5px;
+      }
+      .fmilyright{
+        width: 70%;
+        margin-top: 5%;
+      }
+      .fmilyright .family-icon{
+        margin-top: 0;
+      }
+      .fmilyright .fname{
+        margin-top: 0;
+      }
+      .fmilyright .location-icon{
+        width: 16px;
+        margin-top: 10px;
+      }
+      .fmilyright strong{
+        bottom: 5%;
+        font-weight: normal;
+      }
+      .fmilyright strong span{
+        font-size: 22px;
+      }
+      .banner-button-left{
+        left: 2%;
+        top: 60%;
+        width: 22px;
+      }
+      .banner-button-right{
+        left: 92%;
+        top: 60%;
+        width: 22px;
+      }
+      .formtop #petname{
+        width: 100%;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        padding: 5% 3%;
+      }
+
+      .ensure{
+        height:auto;
+        padding: 5% 5% 10%;
+        background: url(http://viptail.image.alimmdn.com/files/official_web/img/mob_bg.png) center top no-repeat;
+        background-size: 100%;
+        margin-top: 16%;
+      }
+      .ensure h1{
+        font-size: 22px;
+        margin-bottom: 5%;   
+      }
+      .ensure div{
+        vertical-align: top;
+        float: none;
+        display: inline-block;
+        width: 46%;
+        margin: 5% 1% 0;
+      }
+      .ensure div h2{
+        font-size: 16px;
+      }
+      .ensure div h3{
+        font-size: 13px;
+      }
+      .ensure div img{
+        width: 23%;
+        margin: 3% 0;
+        vertical-align: top;
+      }
+
+
+      .daily{
+        padding: 10% 0 0 0;
+      }
+      .daily h1{
+        display: none;
+      }
+      .daily h5{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-weight: 800;
+        color: #555;
+      }
+      .swiper-container-daily-p{
+        display: block;
+        margin-top: 10%;
+        overflow: hidden;
+        width: 100%;
+      }
+      .swiper-container-daily-p .daily-left{
+        width: 100%;
+        height: 15em;
+      }
+      .swiper-container-daily-p .swiper-slide{
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 12%;
+      }
+      .swiper-container-daily-p .daily-title{
+        display: none;
+      }
+      .swiper-container-daily-p h2{
+        display: none;
+      }
+      .swiper-container-daily-p .daily-family-content{
+        width: 100%;
+        margin: 2% 0;
+        color: #a0a0a0;
+        overflow: hidden;/*超出部分隐藏*/
+        white-space: nowrap;/*不换行*/
+        text-overflow:ellipsis;/*超出部分文字以...显示*/
+      }
+      .swiper-container-daily-p .daily-right {
+        padding: 3% 5%;
+      }
+      .swiper-container-daily-p .daily-right h1{
+        display: block;
+        text-align: left;
+        font-size: 16px;
+      }
+      .swiper-container-daily-p .daily-family-img{
+        position: absolute;
+        right: 5%;
+        bottom: 30%;
+        width: 15%;
+        z-index: 1;
+        border-radius: 100%;
+        border: 1px solid #fff;
+      }
+      .swiper-container-daily-p .daily-family-name{
+        display: inline-block;
+        width: 100%;
+        background: rgba(255,255,255,0.5);
+        text-align: right;
+        position: absolute;
+        left: 0;
+        color: #282828;
+        bottom: 28%;
+        padding: 5px 23% 5px 0;
+      }
+      .daily .banner-button-left,.daily .banner-button-right{
+        display: none;
+      }
+      .swiper-pagination-bullet{
+        width: 5.5%;
+        height: 3px;
+      }
+      .cover div{
+        width: 80%;
+      }
+      .swiper-container-daily{
+        display: none;
+      }
+      .community{
+        display: none;
+      }
+      .comefamily{
+        display: none;
+      }
+      footer .footer-flex,footer ul{
+        display: none;
+      }
+      footer{
+        padding: 3% 5%;
+        margin-bottom: 3.5%;
+        background: #fff;
+      }
+      .phone-footer{
+        display: block;
+        width: 100%;
+        margin: 3% 0 0;
+      }
+      .fixedbottom{
+        display: block;
+      }
+      .aphone{z-index:10001;display:block;position: fixed;right: 2%;bottom: 11%;}
+      .aphone a[href='#bottom']{transition-delay:1s }
+      .cover div{
+        margin-top: 100px;
+        height: 300px;
+      }
+      .cover div h1{
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .cover div .download{
+        display: none;
+      }
+      .cover div h3{
+        margin-top: 5%;
+      }
+    }
+
+    @media (max-width: 375px){
+      .ensure h1{
+        margin-bottom: 0;
+      }
+      .ensure div h3{
+        font-size: 12px;
+      }
+      .ip6{
+        margin-left: -10%;
+      }
+      .swiper-container-daily-p .daily-right{
+        padding: 4% 5%;
+      }
+      .family h2{
+        padding: 0 1%;
+      }
+    }
+    @media (max-width: 320px){
+      select{
+        font-size: 13px;
+      }
+      .coverform{
+        top: -60px;
+      }
+      .formbottom input{
+        font-size: 13px;
+      }
+      .ensure{
+        padding: 5% 0 10%;
+      }
+      .ensure div h2{
+        font-size: 13px;
+      }
+      .ensure div{
+        margin: 3% 0 0;
+        width: 49%;
+      }
+      .fmilyright .fname{
+        font-size: 15px;
+      }
+      .fmilyright .location-icon,.fmilyright .cityname{
+        margin-top: 5px;
+      }
+      .fmilyright strong{
+        bottom: 0;
+      }
+      .swiper-container-daily-p .daily-right{
+        padding: 5%;
+      }
+      .family h2{
+        padding: 0 10%;
+      }
+    }
