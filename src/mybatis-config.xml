@@ -2,8 +2,9 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "D:\add\org\apache\ibatis\builder\xml\mybatis-3-config.dtd">
 <configuration>
-
+<!--告诉mybasis去哪找映射文件-->
    <mappers>
+   
    <mapper  resource="com/mapper/AllusersMapper.xml"/>
    <mapper  resource="com/mapper/YonghuzhuceMapper.xml"/>
    <mapper  resource="com/mapper/XinwentongzhiMapper.xml"/>
@@ -17,8 +18,8 @@
    <mapper  resource="com/mapper/HunlicehuayudingMapper.xml"/>
    <mapper  resource="com/mapper/JiudianyudingMapper.xml"/>
    <mapper  resource="com/mapper/HunshayudingMapper.xml"/>
-<mapper  resource="com/mapper/BankuaiMapper.xml"/>
-<mapper  resource="com/mapper/TieziMapper.xml"/>   
+   <mapper  resource="com/mapper/BankuaiMapper.xml"/>
+   <mapper  resource="com/mapper/TieziMapper.xml"/>   
    </mappers>
 
 </configuration>
